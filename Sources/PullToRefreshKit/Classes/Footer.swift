@@ -82,7 +82,7 @@ open class DefaultRefreshFooter:UIView, RefreshableFooter{
     }
     #if swift(>=4.2)
     #if os(tvOS)
-    public let spinner:UIActivityIndicatorView = UIActivityIndicatorView(style: .large)
+    public let spinner:UIActivityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
     #else
     public let spinner:UIActivityIndicatorView = UIActivityIndicatorView(style: .gray)
     #endif
