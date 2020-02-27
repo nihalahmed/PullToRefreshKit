@@ -100,7 +100,11 @@ open class DefaultRefreshHeader: UIView, RefreshableHeader {
     }
     
     #if swift(>=4.2)
+    #if os(tvOS)
+    public let spinner:UIActivityIndicatorView = UIActivityIndicatorView(style: .large)
+    #else
     public let spinner:UIActivityIndicatorView = UIActivityIndicatorView(style: .gray)
+    #endif
     #else
     public let spinner:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
     #endif

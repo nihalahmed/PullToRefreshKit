@@ -70,7 +70,11 @@ open class ElasticRefreshControl: UIView {
         sizeToFit()
         spinner.hidesWhenStopped = true
         #if swift(>=4.2)
+        #if os(tvOS)
+        spinner.style = .large
+        #else
         spinner.style = .gray
+        #endif
         #else
         spinner.activityIndicatorViewStyle = .gray
         #endif
