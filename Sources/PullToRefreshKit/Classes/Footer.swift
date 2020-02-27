@@ -200,14 +200,6 @@ open class DefaultRefreshFooter:UIView, RefreshableFooter{
     }
 }
 
-#if os(tvOS)
-extension DefaultRefreshFooter {
-    open override var canBecomeFocused: Bool {
-        return true
-    }
-}
-#endif
-
 class RefreshFooterContainer:UIView{
     enum RefreshFooterState {
         case idle
