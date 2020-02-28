@@ -71,7 +71,7 @@ open class ElasticRefreshControl: UIView {
         spinner.hidesWhenStopped = true
         #if swift(>=4.2)
         #if os(tvOS)
-        spinner.style = .whiteLarge
+        spinner.style = .white
         #else
         spinner.style = .gray
         #endif
