@@ -118,7 +118,7 @@ open class DefaultRefreshFooter:UIView, RefreshableFooter{
         textDic[mode] = text
         textLabel.text = textDic[.pullToRefresh]
     }
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(spinner)
         addSubview(textLabel)
